@@ -1,0 +1,163 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+.header{
+	
+
+}
+
+.navbar {
+	background-color: #44b76f;
+}
+.navbar-header{
+	padding-top: 55px;
+}
+.navbar .phn{
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+.menu .navbar-nav li a{
+	color: #fff;
+	padding-top: 80px;
+}
+.menu .navbar-nav li:hover{
+	border-top: 2px solid #fff;
+	
+}
+.menu .navbar-nav .act{
+	position: relative;
+}
+.menu .navbar-nav .act::before{
+	position: absolute;
+	content: " ";
+	top:0px;
+	height: 8px;
+	width: 40px;
+	background-color: #fff;
+	margin-left: 14px;
+}
+.header .lorem_a h1{
+	color: #fff;
+	font-size: 42px;
+	line-height: 65px;
+	margin-top: 75px;
+	margin-bottom: 22px;
+}
+@media only screen and (max-width: 600px){
+	.header .lorem_a h1{
+	color: red;
+	font-size: 32px;
+	text-align: center;
+}
+}
+.header .lorem_a p{
+	color: #e6f5ec;
+	font-size: 25px;
+	line-height: 45px;
+}
+.box{
+	padding-top: 50px;
+	
+}
+.box .btn {
+	padding: 16px 30px;
+	color: #fff;
+	background-color:#44b76f;
+	border:1px solid #fff;
+	margin-right: 30px;
+	margin-top: 20px;
+}
+.box .btn:hover{
+	color: #44b76f;
+	background-color:#fff;
+	
+}
+.second{
+	
+	padding: 70px; 
+}
+
+.second .etiam p{
+	line-height: 30px;
+	/*margin-left: 50px;*/
+	color: #acacac;
+}
+.second .etiam h1{
+	margin-top: 125px;
+    margin-bottom: 26px;
+   /*margin-left: 50px;*/
+    color: #44b76f;
+}
+
+.third{
+	background-color: #f6f6f6;
+	padding: 70px;
+}
+.third .rdo{
+	padding-top: 20px;
+}
+.third .etiam p{
+	line-height: 30px;
+	/*margin-left: 50px;*/
+	color: #acacac;
+}
+.third .etiam h1{
+	margin-top: 125px;
+    margin-bottom: 26px;
+    /*margin-left: 50px;*/
+    color: #44b76f;
+}
+.slider{width: 310px;height: 650px;}
+.slider img{width: 310px;height: 650px;}
+.owl-dot{
+	display: inline-block;
+	margin: 0px 5px; 
+}
+.slider .owl-dot span{
+	background: #dfdfdf;
+    width: 15px;
+    display: block;
+    height: 15px;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+.slider .owl-dot.active span{
+	background-color: #44b76f;
+}
+
+.footer{
+	margin: 50px 0px 50px 0px;
+	line-height: 30px;
+}
+.footer li{
+	
+	padding: 10px;
+}
+.footer .press ul li a{
+	color: #acacac;
+}
+.footer p{
+	color: #acacac;
+}
+.social_icons ul li a{
+	width: 60px;
+	height: 60px;
+	font-size: 20px;
+	line-height: 60px;
+	border-radius: 50%;
+	background-color: red;
+	display: inline-block;
+	-webkit-transition: ease-in-out .5s;
+	transition: ease-in-out .5s;
+
+}
+.social_icons ul li a:hover{
+	background-color: blue;
+}
+.social_icons ul li a:hover i{
+	color: #fff;
+}
+@media only screen and (max-width: 600px){
+
+}

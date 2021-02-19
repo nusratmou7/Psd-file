@@ -1,0 +1,154 @@
+.mini-cart-page{
+	position: absolute;
+    right: 0;
+    top: 72px;
+	width: 462px;
+	margin: 0 auto;
+	padding:0 15px;
+	border-radius: 4px;
+	box-shadow: 0 16px 32px 0 rgba(216, 216, 216, 0.5);
+	background-color: #f1faff;
+	padding-bottom: 20px;
+	visibility: hidden;
+	opacity: 0;
+	@include media-max(500px){
+		width: 300px;
+	}
+	.pad-0{
+		@include media-max(480px){
+			padding: 0;
+		}
+	}
+	.header{
+		background-color: #c0e1f2;
+		height: 60px;
+    	line-height: 60px;
+		.text{
+			@include font($GoogleSans,400,16px);
+  			color: #595959;
+		}
+		.icon{
+			text-align: right;
+			i{
+				margin-right: 40px;
+				cursor: pointer;
+				color: rgba(0, 0, 0, 0.69);
+			}
+		}
+	}
+			
+	ul{
+		margin: 0;
+		li{
+			padding: 20px 0;
+    		border-bottom: 1px solid #ccc;
+			.quantity{
+				.q-num{
+					position: relative;
+					@include font($GoogleSans,400,16px);
+					  color: #757575;
+					&:after, &:before{
+						content: "";
+						position: absolute;
+						cursor: pointer;
+						width: 15px;
+					    height: 15px;				   
+						
+					}
+					&:after{					
+						background: url("../images/down-icon.png");
+					    background-position-y: bottom;
+					    bottom: -11px;
+					    left: -2px;
+					    background-size: contain;
+					     background-repeat: no-repeat;
+					    background-position-x: center;	
+						
+					}
+					&:before{
+						background: url("../images/up-icon.png");					    
+					    background-position-y: top;
+					    top: -11px;
+					    left: -2px;
+					    background-size: contain;
+					     background-repeat: no-repeat;
+					    background-position-x: center;	
+					}
+				}
+			}
+			.pro-img{
+				width: 36px;
+				height: 31px;
+				img{
+					width: 100%;
+				}
+			}
+			.product-name a{
+				@include font($GoogleSans,400,13px !important);
+  				color: #595959;
+  				text-decoration: none;
+  				padding: 0 !important;
+			}
+			.product-color{
+				@include font($GoogleSans,400,10px);
+  				color: #757575;
+			}
+			.product-price{
+				@include font($GoogleSans,700,16px);
+  				color: #757575;
+  				@include media-max(500px){
+  					font-size: 14px !important;
+  				}
+			}
+			.remove{
+				img{
+					width: 10px;
+					height: auto;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.special-code{
+		@include font($GoogleSans,400,16px);
+  		color: #595959;
+  		margin-bottom: 10px;
+	}
+	form{
+		width: 280px;
+		margin: 20px auto;
+		input{
+			  width: 170px;
+			  height: 50px;
+			  border-radius: 4px;
+			  background-color: #ffffff;
+			  box-shadow: none;
+			  outline: 0;
+			  padding: 10px;
+			  display: inline-block;
+		}
+		button{
+			@include font($GoogleSans,700,16px);
+			color: #595959;
+			outline: 0;
+			margin-left: 20px;
+			background-color: transparent;   
+			border: 0;
+		    border-color: transparent;
+		    border-image: none;
+		}
+	}
+	.Total-price{
+		text-align: center;
+		@include font($GoogleSans,700,24px);
+ 	 	color: #595959;
+	}
+	.mini-cart-btn{
+		margin-top: 20px;
+		text-align: center;
+		.btn-rounded{
+			margin:0 5px;
+			color:#fff !important;
+		}
+	}
+}

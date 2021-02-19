@@ -1,0 +1,244 @@
+.cart-page-header{
+	background: #fff url('../images/product-bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 100%;
+	object-fit: contain;
+	padding: 60px 0;
+	@include media-min(1920px){
+		height: 450px;
+	}
+	.heading-1{
+		color: #fff;
+		padding: 100px 0;
+		@include media-min(1920px){
+			padding: 164px 0;
+		}
+	}
+	.view-product{
+		text-align: left;
+		padding-bottom: 20px;
+	}
+	.view-product a{
+		font-size: 24px;
+		  font-weight: bold;
+		  font-style: normal;
+		  font-stretch: normal;
+		  line-height: 2.08;
+		  letter-spacing: normal;
+		  color: #ffffff;
+		  text-decoration: underline;
+		  
+	}
+}
+
+.cart-dtls{
+	padding-bottom:100px;
+	table{
+		width: 100%;
+		thead{
+			tr{
+				 height: 80px;
+  				background-color: #f1f8fa;
+				th{
+					@include font($GoogleSans,700,16px);
+				  	color: #595959;
+					text-align: center;
+					@include media-max(991px){
+						font-size: 14px;
+					}
+				}
+			}
+		}
+		tbody{
+			tr{
+				td{
+					text-align: center;
+					padding: 0 5px;
+					img{
+						padding: 20px;
+						margin: 0 auto;
+						@include media-max(991px){
+							width: 180px;
+						}
+					}
+					.heading-4{
+						font-weight: 700;
+						color: #595959;
+						@include media-max(991px){
+							font-size: 18px;
+						}
+						@include media-max(600px){
+							font-size: 16px;
+						}
+					}
+					.sub-text{
+						@include font($GoogleSans,400,16px);
+						  color: #a6a6a6;
+						  @include media-max(991px){
+							font-size: 14px;
+						}
+					}
+					.price{
+						@include font($GoogleSans,700,18px);
+						  line-height: 2.78;
+						  color: #595959;
+						  @include media-max(991px){
+							font-size: 16px;
+						}
+						  @include media-max(600px){
+							font-size: 14px;
+						}
+					}
+					.quantity{
+						    width: 30px;
+						    margin: 0 auto;
+						    position: relative;
+						.q-number{
+							@include font($GoogleSans,400,16px);
+							color: #757575;
+							position: relative;
+							@include media-max(991px){
+								font-size: 16px;
+							}
+							&:before{
+								content:"\f077";
+								font-family: FontAwesome;
+								position: absolute;
+								top: -23px;
+								left: 7px;
+								cursor: pointer;
+							}
+							&:after{
+								content:"\f078";
+								font-family: FontAwesome;
+								position: absolute;
+								bottom: -20px;
+								left: 9px;
+								cursor: pointer;
+							}
+						}
+					}
+					.sub-price{
+						@include font($GoogleSans,700,18px);
+						line-height: 2.78;
+						color: #595959;
+						@include media-max(991px){
+							font-size: 16px;
+						}
+						@include media-max(600px){
+							font-size: 14px;
+						}
+					}
+					.remove-btn{
+						@include font($GoogleSans,500,18px);
+						color: #f0972d;
+						background-color: transparent;
+					    box-sizing: border-box;
+					    padding: 2px 6px 3px;
+					    border-width: 0;
+					    border-style: none;
+					    border: 0;
+					    border-color: transparent;
+					    border-image: none;
+					    outline: 0;
+					    @include media-max(991px){
+							font-size: 16px;
+						}
+					    @include media-max(991px){
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.border-top{
+		border-top: 1px solid rgba(0, 0, 0, 0.2);
+	}
+	.special-code{
+		width: 320px;
+		margin-top: 20px;
+		.heading-4{
+			@include font($GoogleSans,400,24px);
+			  color: #595959;
+		}
+		.text{
+			@include font($GoogleSans,400,13px);
+			  color: #757575;
+			  margin: 10px 0;
+		}
+		form{
+			margin: 20px 0;
+			.input-group{
+				.input-group-btn{
+					button{
+						@include font($GoogleSans,700,16px);
+						width: 100px;
+						height: 50px;
+						 border-radius: 4px;
+						  background-color: #ffffff;
+						 outline: 0;
+						 box-shadow: none;
+						  background-color: #f0972d;
+						  color: #ffffff;
+						 border-image: none;
+						 border: 0;
+						  border-bottom-left-radius: 0;
+   						border-top-left-radius: 0;
+					}
+				}
+			}
+			.form-control{
+				height: 50px;
+				 border-radius: 4px;
+				  background-color: #ffffff;
+				 outline: 0;
+				 box-shadow: none;
+				 border: 1px solid #cccccc;
+				 border-right: 0;
+				     border-bottom-right-radius: 0;
+   					border-top-right-radius: 0;
+				 &:focus{
+				 	outline: 0;
+				 }
+			}
+			
+		}
+		.Payment{
+			.heading-4{
+				font-weight: 400;
+				margin-bottom: 10px;
+			}
+			i{
+				margin: 10px 5px;
+			}
+		}
+	}
+	.total{
+		margin-top: 20px;
+		p{
+			span{
+			}
+			.sub-total-text, .sub-total-amount, .tax-text, .tax-amount{
+				@include font($GoogleSans,700,18px);
+				color: #757575;
+			}
+			.sub-total-text, .tax-text, .total-text{
+				width: 200px;
+			}
+			.sub-total-amount{}
+			.tax-text{}
+			.tax-amount{}
+			.total-text{
+				@include font($GoogleSans,700,24px);
+				  color: #595959;
+			}
+			.total-amount{
+				@include font($GoogleSans,700,24px);
+				  color: #595959;
+			}
+
+		}
+	}
+}

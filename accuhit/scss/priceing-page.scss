@@ -1,0 +1,230 @@
+.priceing-page-header{
+	background: #fff url('../images/Outside-us-hero.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 100%;
+	object-fit: contain;
+	padding: 60px 0;
+	@include media-min(1920px){
+		height: 450px;
+	}
+	.heading-1{
+		color: #fff;
+		padding: 120px 0;
+		@include media-min(1920px){
+			padding: 164px 0;
+		}
+
+	}
+}
+
+.order-online-section{
+	padding: 100px 0;
+	background-color: #fff;
+	@include media-max(480px){
+		padding: 60px 0;
+	}
+	.product-dtls{		
+		.section-heading{
+			margin-bottom: 40px;
+			.title{
+				font-weight: normal;
+	        	position: relative;       
+				max-width: 500px;
+				margin: 0 auto;
+				@include media-max(600px){
+	            	font-size: 28px;
+	            	top: -12px;
+	            	max-width: 343px;
+	            }
+				@include media-max(480px){
+					max-width: 272px;
+					font-size: 24px;
+				}
+				&:before{
+					content: 'Order online';
+					position:absolute;
+		            font-size: 65px;
+		            color:rgba(89, 89, 89, 0.05);
+		            left: 0px;
+		            top: -18px;
+		            text-transform: uppercase;	
+		             @include media-max(600px){
+	            	font-size: 45px;
+	            	top: -12px;
+		            }
+		            @include media-max(480px){
+		            	font-size: 35px;
+		            	top: -8px;
+		            }
+		            @include media-max(375px){
+		            	font-size: 35px;
+		            	top: -8px;
+		            }
+				}
+			}			
+		}
+		.p-text{
+			width:700px;
+			@include font($GoogleSans,400,24px);
+			line-height: 1.63;
+			letter-spacing: normal;
+			color: #595959;
+			margin: 0 auto;
+			text-align: center;
+			@include media-max(767px){
+				width: 100%;
+				font-size: 18px;
+			}
+		}
+		.product-dropdown{
+			max-width: 460px;
+			width: 100%;
+	    	margin: 25px auto;
+	    	padding: 50px 0;
+			background: #fff;
+			padding: 10px 0;
+			border-radius: 4px;
+  			box-shadow: -6px 3px 21px 0 rgba(15, 25, 48, 0.08);
+  			@include media-max(480px){
+  				max-width:300px;
+				text-align: center;
+			}
+			ul{
+				margin: 0;
+
+				li{
+					padding: 0;
+					.custom-dropdown{						
+						button.btn-default{
+							@include font($GoogleSans,400,20px);
+							color: #a6a6a6;
+							border-color: #fff;
+							outline: 0;
+							box-shadow: none;
+							@include media-max(480px){
+								font-size: 14px;
+								padding: 6px;
+							}
+						}
+						.btn-default:active, .btn-default:hover, .btn-default:focus{
+							background-color: #fff;
+							border-color: #fff;
+						}
+						.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default{
+							background-color: #fff !important;
+						}						
+						.custom-dropdown-menu{
+							border: 0;
+							min-width: 122px;							
+							li{
+								a{
+									@include font($GoogleSans,400,13px);
+									color: #a6a6a6;
+									padding: 3px 10px;
+									&:hover{
+										color: #595959;
+									}
+								}
+							}
+						}
+					}
+					.btn-rounded{
+						margin-left: 30px;
+						padding: 9px 20px;
+						font-weight: 700;
+						@include media-max(480px){
+							margin-left:0;
+							min-width: 80px;
+							padding: 9px 9px
+						}
+
+					}
+				}
+			}
+		}
+	}
+	
+}
+.priceing-section{
+	padding-bottom: 100px;
+	.regular-price{
+		  border-radius: 4px;		  
+		  background-color: #ffffff;
+		  padding: 40px 0;
+		  box-shadow: 0 4px 40px 0 rgba(150, 106, 244, 0.1);
+		  &:hover{
+		  	box-shadow: 0 4px 40px 0 rgba(150, 106, 244, 0.1);
+		  	 @include transition(all .2s ease-in-out);
+		  	.heading-2{
+		  		color: #f0972d;
+		  		@include transition(all .2s ease-in-out);
+		  	}
+		  }
+		  &.USshipping{
+				padding-bottom: 63px;
+		  }
+		.heading-2{
+			@include font($GoogleSans,700,35px);
+			  text-align: center;
+			  margin-bottom: 20px;
+			  color: #595959;
+			  @include media-max(480px){
+			  	font-size: 24px;
+			  }
+		}
+		.sep{
+			width: 100%;
+  			height: 1px;
+		}
+		.price-list{
+			    max-width: 400px;
+    			margin: 0 auto;
+			 	// list-style-image: url(../images/success.png);
+		   //   	background-size: cover;
+		   //   	background-repeat: repeat;
+		 		padding: 0 50px;
+			li{
+				position: relative;
+				 padding-left: 1.3em;
+				 margin: 15px 0;
+				&:before{
+					position: absolute;
+				    content: "";
+				    background-image: url("../images/success.png");
+				    display: inline-block;
+				    height: 21px;
+				    width: 21px;
+				    background-size: cover;
+				    text-align: center;
+				    background-repeat: no-repeat;
+				    background-position: center;
+				    margin-left: -40px;
+				    color: #616161;
+				}
+				p{
+					@include font($GoogleSans,400,16px);
+					  line-height: 1.5;
+					  letter-spacing: normal;
+					  color: #757575;
+					   @include media-max(480px){
+					  	font-size:14px;
+					  }
+					  span{
+					  	@include font($GoogleSans,700,16px);
+					  }
+					  .p-name-text{
+					  	font-weight: 400;
+					  }
+					  a{
+					  	@include font($GoogleSans,700,16px);
+					  	color: #5dbdf7;
+					  	text-decoration: none;
+					  }
+				}
+			}
+		}
+	}
+}
+
+	
